@@ -15,4 +15,4 @@ environment:
 pipeline:
   - runs: |
       mkdir -p "${{targets.destdir}}"
-      cp vendor/hello.txt "${{targets.destdir}}/hello"
+      cp vendortest/vendor/hello.txt "${{targets.destdir}}/hello"
