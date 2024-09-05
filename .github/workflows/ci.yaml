@@ -14,4 +14,5 @@ jobs:
         repository-append: "https://packages.wolfi.dev/os"
         keyring-append: "https://packages.wolfi.dev/os/wolfi-signing.rsa.pub"
         repository-path: ${{ github.workspace }}/packages/vendortest
+        archs: arm64
     - run: find ${{ github.workspace }}/packages/vendortest
